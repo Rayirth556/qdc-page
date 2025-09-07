@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "web project, qdc task",
+  "main": "public/index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "live-server public --port=3000",
+    "start": "npm run build-css & npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayirth556/qdc-page.git"
+  },
+  "keywords": ["login", "tailwind", "web"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rayirth556/qdc-page/issues"
+  },
+  "homepage": "https://github.com/Rayirth556/qdc-page#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.13"
+  }
+}
